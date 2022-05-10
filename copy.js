@@ -12,11 +12,6 @@ var arr = [{id: 1,name: 'a',value: 'a1'},
 //  [{id:3,name:'b',value:'b1'},{id:4,name:'b',value:'b2'},{id:5,name:'b',value:'b3'},],
 //  [{id:6,name:'c',value: 'xxxx'}]
 //]
-
-	
-
-
-
 function tran(arr) {
 	// 数组去重
 	var obj1 = arr
@@ -44,6 +39,11 @@ function tran(arr) {
 }
 const results = tran(arr)
 console.log(results)
+
+
+
+
+
 
 
 var arr = [{id: 1,name: 'a',value: 'a1'},
