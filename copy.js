@@ -18,17 +18,6 @@ var arr = [{id: 1,name: 'a',value: 'a1'},
 
 
 function tran(arr) {
-	let newArr = [];
-	arr.map((item)=>{
-		const key = item.name.charCodeAt() - 97
-		if(!newArr[key]){
-			newArr[key] = []
-		}
-		newArr[key].push(item)
-	})
-	console.log(newArr)
-	
-	
 	// 数组去重
 	var obj1 = arr
 	var obj2 = Object.assign([], obj1); //避免深度拷贝修改原数组
@@ -55,3 +44,26 @@ function tran(arr) {
 }
 const results = tran(arr)
 console.log(results)
+
+
+var arr = [{id: 1,name: 'a',value: 'a1'},
+	{id: 2,name: 'a',value: 'a2'},
+	{id: 3,name: 'b',value: 'b1'},
+	{id: 4,name: 'b',value: 'b2'},
+	{id: 5,name: 'b',value: 'b3'},
+	{id: 6,name: 'c',value: 'xxxx'},
+	{id: 7,name: 'd',value: 'xxxx'}
+]
+function tran(arr){
+	let newList = [];
+	arr.map((item)=>{
+		const key = item.name.charCodeAt() - 97
+		if(!newList[key]){
+			newList[key] = []
+		}
+		newList[key].push(item)
+	})
+	console.log(newList)
+}
+const ret = tran(arr)
+
