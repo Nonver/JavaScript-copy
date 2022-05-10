@@ -13,8 +13,22 @@ var arr = [{id: 1,name: 'a',value: 'a1'},
 //  [{id:6,name:'c',value: 'xxxx'}]
 //]
 
+	
+
+
 
 function tran(arr) {
+	let newArr = [];
+	arr.map((item)=>{
+		const key = item.name.charCodeAt() - 97
+		if(!newArr[key]){
+			newArr[key] = []
+		}
+		newArr[key].push(item)
+	})
+	console.log(newArr)
+	
+	
 	// 数组去重
 	var obj1 = arr
 	var obj2 = Object.assign([], obj1); //避免深度拷贝修改原数组
