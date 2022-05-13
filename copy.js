@@ -13,6 +13,17 @@ var arr = [{id: 1,name: 'a',value: 'a1'},
 //  [{id:6,name:'c',value: 'xxxx'}]
 //]
 function tran(arr) {
+	
+}
+const results = tran(arr)
+console.log(results)
+
+
+
+
+
+
+function tran(arr) {
 	// 数组去重
 	var obj1 = arr
 	var obj2 = Object.assign([], obj1); //避免深度拷贝修改原数组
